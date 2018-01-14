@@ -2,6 +2,10 @@
 ## functions do
 
 ## Write a short comment describing this function
+
+## The function below, which creates a matrix, includes in itself setting the value of the matrix,
+## getting the value of the matrix, setting the value of the inversion, and getting the value
+## of the inversion. The function also caches the matrix inversion.
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -17,6 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
+
+## The function below inverts the matrix, created with the function above.
 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
